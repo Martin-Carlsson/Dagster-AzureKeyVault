@@ -1,0 +1,20 @@
+{
+  "python.analysis.typeCheckingMode": "basic",
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "python.testing.pytestArgs": [
+    "dagster_azure_key_vault"
+  ],
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportMissingTypeStubs": "none",
+    "reportGeneralTypeIssues": "none"
+  },
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.formatting.provider": "black",
+  "editor.formatOnSaveMode": "file",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  }
+}

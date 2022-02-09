@@ -1,0 +1,36 @@
+{
+	"name": "Dagster Azure Key Vault",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+	"settings": {
+		"python.defaultInterpreterPath": "/usr/local/bin/python",
+		"python.analysis.typeCheckingMode": "basic",
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": true,
+		"python.formatting.blackPath": "/usr/local/bin/black",
+		"python.linting.pycodestylePath": "/usr/local/bin/pycodestyle",
+		"python.linting.pylintPath": "/usr/local/bin/pylint",
+		"python.testing.pytestArgs": [
+			"dagster_azure_key_vault"
+		],
+		"python.analysis.diagnosticSeverityOverrides": {
+			"reportMissingTypeStubs": "none",
+			"reportGeneralTypeIssues": "none"
+		},
+		"python.testing.unittestEnabled": false,
+		"python.testing.pytestEnabled": true,
+		"python.formatting.provider": "black",
+		"editor.formatOnSaveMode": "file",
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": true
+		}
+	},
+	"extensions": [
+		"ms-python.python",
+		"ms-python.vscode-pylance"
+	],
+	"postCreateCommand": "pip install -r requirements.txt",
+}

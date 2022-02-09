@@ -1,0 +1,7 @@
+dagit
+pylint
+pytest
+black
+azure-keyvault-secrets
+azure-identity
+-e ./dagster_azure_key_vault
