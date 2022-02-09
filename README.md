@@ -4,7 +4,7 @@ This repo is an examble of how to use Azure Key Vault as a Dagster [resource](ht
 
 I am open sourcing this both to get feedback and learn ... and to save you for a lot of frustration (this took waaay to long for me to figure out)
 
-Contact me on the [Dagster Slack](https://dagster-slackin.herokuapp.com/), my name is `Martin Carlsson`, or directly on `martin@imus.dk`
+If you have any questions, feedback, bugs, or improvements, create an issue - or contact me on the [Dagster Slack](https://dagster.com/), my name is `Martin Carlsson`, or directly on `martin@imus.dk`
 
 
 **And don't forget to hit the ⭐️ button**
@@ -19,7 +19,7 @@ Contact me on the [Dagster Slack](https://dagster-slackin.herokuapp.com/), my na
 
 Use [Remote development in Containers](https://code.visualstudio.com/docs/remote/containers-tutorial) or install requirements directly `pip install -r requirements.txt`
 
-### Pytest
+### Run `pytest`
 
 **Set environment variables:**
 
@@ -30,7 +30,7 @@ export AZURE_KEY_VAULT_SERVICE_PRINCIPAL_CLIENT_ID=
 export AZURE_TENANT_ID=
 ```
 
-**Rub pytest:**
+**Execute pytest:**
 
 Just run `pytest` in the terminal.
 
