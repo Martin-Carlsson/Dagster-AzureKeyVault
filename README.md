@@ -1,4 +1,48 @@
-# Dagster Azure Key Vault
+# Dagster 🪢 Azure Key Vault
+
+## Setup repo on your local machine
+
+### Download repo
+
+[Start by forking this repo](https://github.com/Martin-Carlsson/Dagster-AzureKeyVault/fork), hit the star icon ⭐️, and download the repo locally.
+
+### Install development environment
+
+Use [Remote development in Containers](https://code.visualstudio.com/docs/remote/containers-tutorial) or install requirements directly `pip install -r requirements.txt`
+
+### Pytest
+
+**Set environment variables:**
+
+```
+export AZURE_KEY_VAULT_URI=
+export AZURE_KEY_VAULT_SERVICE_PRINCIPAL_CLIENT_SECRET=
+export AZURE_KEY_VAULT_SERVICE_PRINCIPAL_CLIENT_ID=
+export AZURE_TENANT_ID=
+```
+
+**Rub pytest:**
+
+Just run `pytest` in the terminal.
+
+### Run Dagit
+
+
+**Config:**
+
+```
+ops:
+  get_secret_from_azure_key_vault:
+    config:
+      azure_key_vault_secret_name: "ForTestingKeyVault"
+resources:
+  key_management:
+    config:
+      azure_key_vault_service_principal_client_id:
+      azure_key_vault_service_principal_client_secret:
+      azure_key_vault_uri:
+      azure_tenant_id:
+```
 
 ## Setup and connect to Azure Key Vault
 
