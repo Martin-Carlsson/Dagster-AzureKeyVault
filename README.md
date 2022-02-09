@@ -1,13 +1,13 @@
 # Dagster 🪢 Azure Key Vault
 
-This repo is an examble of how to use Azure Key Vault as a Dagster [resource](https://docs.dagster.io/concepts/resources).
+This repo is an example of using Azure Key Vault as a Dagster [resource](https://docs.dagster.io/concepts/resources).
 
-I am open sourcing this both to get feedback and learn ... and to save you for a lot of frustration (this took waaay to long for me to figure out)
+I am open sourcing this both to get feedback and learn ... and to save **_you_** a lot of frustration (this took waaay too long for me to figure out)
 
 If you have any questions, feedback, bugs, or improvements, create an issue - or contact me on the [Dagster Slack](https://dagster.com/), my name is `Martin Carlsson`, or directly on `martin@imus.dk`
 
 
-**And don't forget to hit the ⭐️ button**
+**And don't forget to hit the ⭐️ button.**
 
 ## Setup repo on your local machine
 
@@ -87,7 +87,7 @@ _You will need it when connecting to Azure Key Vault from Dagster._
 
 <img width="137" alt="image" src="https://user-images.githubusercontent.com/7769335/153219852-37df7200-d178-4b34-906f-c387180ecb40.png">
 
-**For testing create the following secret:**
+**For testing, create the following secret:**
 
 - **Name:** ForTestingKeyVault
 - **Value:** TestValidated
